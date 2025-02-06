@@ -27,6 +27,9 @@ public class ItemCollection {
     private Date creationDate;
     @Getter
     private Date lastModified;
+    @Getter
+    // For soft deletion and restoration
+    private boolean inUse;
     @OneToMany
     private List<TypeA> typeAList;
     @OneToMany
@@ -39,11 +42,7 @@ public class ItemCollection {
     public ItemCollection() {
     }
 
-    public void setDeleted(boolean deleted) {
-    }
-
     public void setChildItemCollections(Map<String, ItemCollection> childItemCollections) {
         ItemCollection.childItemCollections = childItemCollections;
     }
-
 }

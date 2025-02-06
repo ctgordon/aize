@@ -15,7 +15,7 @@ public class WebSecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.
                 authorizeHttpRequests((authz) -> authz
-                        .requestMatchers("/", "/collection").permitAll()
+                        .requestMatchers("/", "/collection", "/typea/**", "/typeb/**", "/typec/**").permitAll()
                         .anyRequest().authenticated())
                 .build();
     }

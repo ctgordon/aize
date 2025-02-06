@@ -17,7 +17,7 @@ public class TypeA {
     private Long id;
     private String name;
     private Date creationDate;
-    private String collectionId;
+    private Long collectionId;
 
     public TypeA() {}
 

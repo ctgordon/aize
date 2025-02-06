@@ -44,5 +44,6 @@ public abstract class CrudServiceImpl<T, ID> implements CrudService<T, ID> {
     public void delete(ID id) {
         repository.deleteById(id);
     }
+
 }
 
