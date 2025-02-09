@@ -1,4 +1,4 @@
-package com.aize.b_collections.service;
+package com.aize.b_collections.service.impl;
 
 import com.aize.b_collections.persistence.dao.ItemCollectionRepository;
 import com.aize.b_collections.persistence.model.ItemCollection;

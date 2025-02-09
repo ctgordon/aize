@@ -1,4 +1,4 @@
-package com.aize.b_collections.service;
+package com.aize.b_collections.service.impl;
 
 import com.aize.b_collections.persistence.dao.TypeARepository;
 import com.aize.b_collections.persistence.dao.TypeBRepository;
@@ -8,7 +8,7 @@ import com.aize.b_collections.service.impl.CrudServiceImpl;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TypeBService extends CrudServiceImpl<TypeB, String> {
+public class TypeBService extends CrudServiceImpl<TypeB, Long> {
     public TypeBService(TypeBRepository typeBRepository) {
         super(typeBRepository);
     }

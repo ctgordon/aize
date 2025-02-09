@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*", maxAge = 3600, allowedHeaders = "*")
 @RestController
 @RequestMapping("/typeb")
-public class TypeBController extends CrudController<TypeB, String> {
-    protected TypeBController(CrudService<TypeB, String> service) {
+public class TypeBController extends CrudController<TypeB, Long> {
+    protected TypeBController(CrudService<TypeB, Long> service) {
         super(service);
     }
 }

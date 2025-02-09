@@ -1,7 +1,7 @@
 package com.aize.b_collections.controllers;
 
 import com.aize.b_collections.persistence.model.ItemCollection;
-import com.aize.b_collections.service.ItemCollectionService;
+import com.aize.b_collections.service.impl.ItemCollectionService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
