@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*", maxAge = 3600, allowedHeaders = "*")
 @RestController
 @RequestMapping("/collection")
-public class ItemCollectionController extends CrudController<ItemCollection, String> {
+public class ItemCollectionController extends CrudController<ItemCollection, Long> {
     protected ItemCollectionController(ItemCollectionService service) {
         super(service);
     }
